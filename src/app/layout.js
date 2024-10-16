@@ -1,3 +1,4 @@
+import TanstackProvider from "@/components/provider";
 import localFont from "next/font/local";
 import "./globals.css";
 
@@ -23,7 +24,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <TanstackProvider>{children}</TanstackProvider>
       </body>
     </html>
   );
